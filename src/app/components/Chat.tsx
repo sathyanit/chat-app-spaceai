@@ -4,7 +4,8 @@ import { useState, useEffect } from "react";
 import { io } from "socket.io-client";
 
 const socket = io("http://localhost:3000"); // Update with your backend URL
-const OPENAI_API_KEY = "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";
+const OPENAI_API_KEY = "api_key";
+// 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
 
 export default function Chat() {
   const [messages, setMessages] = useState<{ text: string; sender: string }[]>([]);
